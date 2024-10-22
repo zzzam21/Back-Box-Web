@@ -15,26 +15,32 @@ export class EncabezadoComponent {
     this.items = [
       {
         label: 'Inicio',
+        routerLink:'home',
         icon: 'pi pi-home'
       },
       {
         label: 'Linea de tiempo',
+        routerLink:'lineTime',
         icon: 'pi pi-history'
       },
       {
         label: 'Configuración',
+        routerLink:'configuration',
         icon: 'pi pi-cog'
       },
       {
         label: 'Sitios de Interés',
+        routerLink:'interst',
         icon: 'pi pi-lightbulb'
       },
       {
         label: 'Funcionalidad',
+        routerLink:'functions',
         icon: 'pi pi-slack'
       },
       {
         label: 'Comentarios',
+        routerLink:'comments',
         icon: 'pi pi-comments'
       }
     ]
