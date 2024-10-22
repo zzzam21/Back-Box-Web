@@ -1,0 +1,19 @@
+.p-button {
+    border: none;
+    background-color: transparent;
+}
+.facebook:hover {
+    background-color: #3b5998;
+}
+.telegram:hover {
+    background-color:#24A1DE;
+}
+.twitter:hover {
+    background-color: #00ACEE;
+}
+.youtube:hover {
+    background-color: #c4302b;
+}
+.linkedin:hover {
+    background-color: #0e76a8;
+}
