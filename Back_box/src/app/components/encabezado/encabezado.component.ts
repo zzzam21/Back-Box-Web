@@ -18,7 +18,7 @@ export class EncabezadoComponent {
         icon: 'pi pi-home'
       },
       {
-        label: 'Historial',
+        label: 'Linea de tiempo',
         icon: 'pi pi-history'
       },
       {

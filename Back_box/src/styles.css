@@ -3,17 +3,3 @@
 @import "primeng/resources/themes/lara-light-blue/theme.css";
 @import "primeng/resources/primeng.css";
 
-.custom-menubar .p-menubar {
-    background-color: #1783b1; 
-}
-.custom-menubar .p-menubar .p-menuitem-link:hover {
-    background-color: transparent;
-}
-.custom-menubar .p-menuitem-link .pi,
-.custom-menubar .p-menuitem-text {
-    color: #ffffff;
-}
-.custom-menubar .p-menuitem-link:hover .pi,
-.custom-menubar .p-menuitem-text:hover {
-    color: #000000;
-}
