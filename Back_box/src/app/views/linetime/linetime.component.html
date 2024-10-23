@@ -1,1 +1,43 @@
-<p>linetime works!</p>
+<div class="flex felx-wrap align-items-center justify-content-center pr-8 pt-3 pb-3">
+    <div class="card flexjustify-content-center pl-8">
+        <p-card header="Desarrollador Principal">
+            <i class="pi pi-code" style="font-size: 2em; color:#1783b1;"></i>
+            <p class="m-0">
+                BackBox es desarrollado por una comunidad de expertos en ciberseguridad con sede en Italia, liderados por Raffaele Forte, uno de los fundadores y principales impulsores del proyecto.
+            </p>
+        </p-card>
+    </div>
+    <div class="card flex justify-content-center pl-8">
+        <p-card header="Base de Ubuntu">
+            <i class="pi pi-desktop" style="font-size: 2em; color:#1783b1;"></i>
+            <p class="m-0">
+                Al estar basado en Ubuntu LTS (Long Term Support), BackBox toma las características de estabilidad y soporte extendido de Ubuntu, pero lo personaliza con herramientas específicas para pentesting. 
+            </p>
+        </p-card>
+    </div>
+    <div class="card flex justify-content-center pl-8">
+        <p-card header="Enfoque en la Seguridad">
+            <i class="pi pi-shield" style="font-size: 2em; color:#1783b1;"></i>
+            <p class="m-0">
+                La distribución está equipada con una amplia gama de herramientas preinstaladas para la seguridad informática, como análisis de red, ingeniería inversa, análisis forense digital y herramientas de auditoría.
+            </p>
+        </p-card>
+    </div>
+</div>
+<div class="card flex justify-content-center pb-3 pt-3 text-600">
+    <H2>Versiones Notables</H2>
+</div>
+<div class="card flex justify-content-center pb-3 pt-3">
+    <p-timeline [value]="events" class="w-full md:w-20rem" align="alternate">
+        <ng-template pTemplate="marker" let-event>
+            <i [class]="event.icon" [style.color]="event.iconColor" [style.fontSize]="event.iconSize"></i>
+        </ng-template>
+        <ng-template pTemplate="opposite" let-event>
+            <span>{{event.date}}</span>
+        </ng-template>
+        <ng-template pTemplate="content" let-event>
+            {{ event.status }}
+            {{event.details}}
+        </ng-template>
+    </p-timeline>
+</div>
