@@ -8,7 +8,7 @@ import { CommentsComponent } from './views/comments/comments.component';
 
 export const routes: Routes = [
     {
-        path:" ",
+        path:"",
         redirectTo:"home",
         pathMatch:"full"
     },
