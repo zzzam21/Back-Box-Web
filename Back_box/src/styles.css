@@ -4,7 +4,8 @@
 @import "primeng/resources/primeng.css";
 
 .custom-menubar .p-menubar {
-    background-color: #1783b1; 
+    background-color: #1783b1;
+    border-radius: 20px; 
 }
 .custom-menubar .p-menubar .p-menuitem-link:hover {
     background-color: transparent;
@@ -17,6 +18,25 @@
 .custom-menubar .p-menuitem-text:hover {
     color: #000000;
 }
+.comment {
+    background-color: #1783b1;
+    border-radius: 20px;
+}
+
+.color {
+    color: #000000;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px; 
+    margin: 20px;
+}
+
+
+
+
 
 .boddy {
     margin:0;
