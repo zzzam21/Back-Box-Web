@@ -1,7 +1,21 @@
+<div class="flex justify-content-center align-items-center">
+    <p-carousel 
+    class="carousel"
+    [value]="user"
+    [numVisible]="1"
+    [circular]="true"
+    [responsiveOptions]="responsiveOptions">
+        <ng-template pTemplate="item" let-user>
+            <p-card [style]="{margin:'20px'}">
+                <div></div>
+                <div></div>
+                <div></div>
+                <h3>{{user.name}}</h3>
+                <i class="pi pi-user"></i>
+                <p [innerHTML]="user.description"></p>
+            </p-card>            
+        </ng-template>
+    </p-carousel>
+</div>
 
-<div class="relative" style="background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9b754e4e-8420-43ae-9c58-e724ec9c5765/d7gbj16-88686a5e-6352-47f8-a8cf-be8eac18fe43.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzliNzU0ZTRlLTg0MjAtNDNhZS05YzU4LWU3MjRlYzljNTc2NVwvZDdnYmoxNi04ODY4NmE1ZS02MzUyLTQ3ZjgtYThjZi1iZThlYWMxOGZlNDMuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.kCX9SjOSRaj86PgGPnN_5M_P-ZS5aGL7b_1bpfHx6rA);width:100%; height:auto">
     
-</div>
-<div class="block text-center p-4 mb-3">
-    <p>Creadores de backBox</p>
-</div>
