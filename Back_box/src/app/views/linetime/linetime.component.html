@@ -1,6 +1,6 @@
-<div class="flex felx-wrap align-items-center justify-content-center pr-8 pt-3 pb-3">
+<div class="flex felx-wrap align-items-center justify-content-center pr-8 pt-3 pb-3 custom-card">
     <div class="card flexjustify-content-center pl-8">
-        <p-card header="Desarrollador Principal">
+        <p-card header="Desarrollador Principal" [style]="{ width: '360px', 'border-radius':'20px', 'color':'black'}">
             <i class="pi pi-code" style="font-size: 2em; color:#1783b1;"></i>
             <p class="m-0">
                 BackBox es desarrollado por una comunidad de expertos en ciberseguridad con sede en Italia, liderados por Raffaele Forte, uno de los fundadores y principales impulsores del proyecto.
@@ -8,7 +8,7 @@
         </p-card>
     </div>
     <div class="card flex justify-content-center pl-8">
-        <p-card header="Base de Ubuntu">
+        <p-card header="Base de Ubuntu" [style]="{ width: '360px', 'border-radius':'20px', 'color':'black'}">
             <i class="pi pi-desktop" style="font-size: 2em; color:#1783b1;"></i>
             <p class="m-0">
                 Al estar basado en Ubuntu LTS (Long Term Support), BackBox toma las características de estabilidad y soporte extendido de Ubuntu, pero lo personaliza con herramientas específicas para pentesting. 
@@ -16,7 +16,7 @@
         </p-card>
     </div>
     <div class="card flex justify-content-center pl-8">
-        <p-card header="Enfoque en la Seguridad">
+        <p-card header="Enfoque en la Seguridad" [style]="{ width: '360px', 'border-radius':'20px', 'color':'black'}">
             <i class="pi pi-shield" style="font-size: 2em; color:#1783b1;"></i>
             <p class="m-0">
                 La distribución está equipada con una amplia gama de herramientas preinstaladas para la seguridad informática, como análisis de red, ingeniería inversa, análisis forense digital y herramientas de auditoría.
@@ -27,17 +27,77 @@
 <div class="card flex justify-content-center pb-3 pt-3 text-600">
     <H2>Versiones Notables</H2>
 </div>
-<div class="card flex justify-content-center pb-3 pt-3">
+<div class="card pb-3 pt-3">
     <p-timeline [value]="events" class="w-full md:w-20rem" align="alternate">
         <ng-template pTemplate="marker" let-event>
             <i [class]="event.icon" [style.color]="event.iconColor" [style.fontSize]="event.iconSize"></i>
         </ng-template>
-        <ng-template pTemplate="opposite" let-event>
-            <span>{{event.date}}</span>
-        </ng-template>
         <ng-template pTemplate="content" let-event>
-            {{ event.status }}
-            {{event.details}}
+            <p-card [header]="event.status" [subheader]="event.date" [style]="{'border-radius':'20px', 'color':'black'}">
+                <p>
+                    {{event.details}}
+                </p>
+            </p-card>
         </ng-template>
     </p-timeline>
+</div>
+<div class="card flex justify-content-center pb-3 pt-3 custom-card">
+    <p-card header="Versión Actual" subheader="8.0.8" [style]="{ width: '360px', 'border-radius':'20px', 'color':'black'}">
+        <ng-template pTemplate="header">
+            <img alt="BackBox.org" src="https://www.infosec.com.tr/wp-content/uploads/2023/09/backbox-logo_black-1024x362.jpg"/>
+        </ng-template>
+        <p>
+            La versión BackBox 8.0.8 es la más reciente y está basada en Ubuntu 22.04 LTS. Esta versión se destaca por su enfoque en la automatización de tareas de ciberseguridad y la integración con plataformas de seguridad como OSINT (Open Source Intelligence) y SIEM (Security Information and Event Management). Ofrece mejoras en el rendimiento, la estabilidad y la actualización de las herramientas de pentesting más recientes.
+        </p>
+    </p-card>
+</div>
+<div class="card flex justify-content-center pb-3 pt-3 text-600">
+    <H2>Herramientas Destacadas en BackBox</H2>
+</div>
+<div class="card flex justify-content-center align-items-center">
+    <p-tabView [style]="{'color': 'black'}">
+        <p-tabPanel header="Nmap" [style]="{ 'border-radius':'20px', 'color':'black'}">
+            <div class="card flex justify-content-center"><img src="https://www.dragonjar.org/wp-content/uploads/2013/06/Nmap.png" alt="Nmap" height="95"></div>
+            <p>
+                Herramienta poderosa para escaneo de redes y detección de hosts y servicios en una red.
+                Escaneo de puertos, detección de sistemas operativos y mapeo de redes.
+            </p>
+        </p-tabPanel>
+        <p-tabPanel header="Metasploit Framework" [style]="{ 'border-radius':'20px', 'color':'black'}">
+            <div class="card flex justify-content-center"><img src="https://www.vonahi.io//images/2019/05/25/metasploit-logo.png" alt="Metasploit Framework" height="95"></div>
+            <p>
+                Es una de las plataformas más populares para realizar pruebas de penetración. Permite a los profesionales de la seguridad detectar, explotar y validar vulnerabilidades.
+                Ejecución de exploits, desarrollo de payloads y pruebas de seguridad.
+            </p>
+        </p-tabPanel>
+        <p-tabPanel header="Wireshark" [style]="{ 'border-radius':'20px', 'color':'black'}">
+            <div class="card flex justify-content-center"><img src="https://miro.medium.com/v2/resize:fit:1200/0*zFEilgbfPjq9rr9L.png" alt="Wireshark" height="95"></div>
+            <p>
+                Uno de los analizadores de tráfico de red más utilizados.
+                Captura y análisis de paquetes de red, útil para identificar problemas de red, ataques y tráfico malicioso.
+            </p>
+        </p-tabPanel>
+        <p-tabPanel header="Burp Suite" [style]="{ 'border-radius':'20px', 'color':'black'}">
+            <div class="card flex justify-content-center"><img src="https://qualysec.com/wp-content/uploads/2023/02/burp-suite.png" alt="Burp Suite" height="95"></div>
+            <p>
+                Plataforma integral para pruebas de seguridad de aplicaciones web.
+                Permite detectar y explotar vulnerabilidades en aplicaciones web, como inyecciones SQL, XSS y más.
+            </p>
+        </p-tabPanel>
+        <p-tabPanel header="Aircrack-ng" [style]="{ 'border-radius':'20px', 'color':'black'}">
+            <div class="card flex justify-content-center"><img src="https://www.softwaretestingstuff.com/wp-content/uploads/2023/08/Untitled_design__12_-removebg-preview.png" alt="Aircrack-ng" width="200" height="95"></div>
+            <p>
+                Conjunto de herramientas para auditoría de redes inalámbricas.
+                Permite interceptar tráfico de red Wi-Fi, desencriptar contraseñas WEP/WPA, y analizar paquetes.
+            </p>
+        </p-tabPanel>
+        <p-tabPanel header="OpenVAS" [style]="{ 'border-radius':'20px', 'color':'black'}">
+            <div class="card flex justify-content-center"><img src="https://www.openvas.org/img/inmenulogo.png" alt="OpenVas" height="95"></div>
+            <p>
+                Un escáner de vulnerabilidades de código abierto que permite realizar auditorías de seguridad a sistemas y redes.
+                Escaneo y análisis de vulnerabilidades conocidas en sistemas, servicios y aplicaciones.
+            </p>
+            Uso: 
+        </p-tabPanel>
+    </p-tabView>
 </div>

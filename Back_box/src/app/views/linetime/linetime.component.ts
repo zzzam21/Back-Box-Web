@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { TimelineModule } from 'primeng/timeline';
 import { CardModule } from 'primeng/card';
+import { TabViewModule } from 'primeng/tabview';
 
 @Component({
   selector: 'app-linetime',
   standalone: true,
-  imports: [TimelineModule,CardModule],
+  imports: [TimelineModule,CardModule,TabViewModule],
   templateUrl: './linetime.component.html',
   styleUrl: './linetime.component.css'
 })

@@ -1,0 +1,14 @@
+@import 'primeflex/primeflex.scss';
+@import "primeicons/primeicons.css";
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+
+.custom-card{
+    background-color: #2d95c4;
+    border-radius: 20px;
+}
+
+p-tabView {
+    width: 60%;
+    align-items: center;
+}
