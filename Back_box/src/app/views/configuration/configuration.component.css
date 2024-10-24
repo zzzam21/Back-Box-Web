@@ -1,0 +1,17 @@
+@import 'primeflex/primeflex.scss';
+@import "primeicons/primeicons.css";
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+
+.customdiv{
+    background-color: #2d95c4;
+    border-radius: 20px;
+}
+.custom-splitter {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.custom-splitter .p-splitter-panel {
+    border-radius: 10px;
+}

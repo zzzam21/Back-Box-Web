@@ -1,1 +1,74 @@
-<p>configuration works!</p>
+<div class="card pt-3 pb-3">
+    <p-splitter 
+        [panelSizes]="[25, 75]" 
+        [style]="{ height: '470px', 'border-radius':'20px'}" 
+        styleClass="mb-5 custom-splitter">
+            <ng-template pTemplate>
+                <div class="col flex align-items-center justify-content-center customdiv">
+                    <p-card header="Instalación de BackBox Linux" [style]="{ 'border-radius':'20px', 'color':'black'}">
+                        <div class="card flex justify-content-center align-items-center">
+                            <i class="pi pi-cog" style="font-size: 30px; margin-right: 8px; color: #00719e"></i>
+                        </div>
+                    </p-card>
+                </div>
+            </ng-template>
+            <ng-template pTemplate>
+                <div class="card flex justify-content-center align-items-center">
+                    <p-tabView [style]="{'color': 'black', 'width':'1000px'}">
+                        <p-tabPanel header="Requisitos previos" [style]="{ 'border-radius':'20px', 'color':'black'}">
+                            <div class="card flex justify-content-center"><img src="https://cdn-icons-png.flaticon.com/512/3967/3967665.png" alt="Requisitos" height="95"></div>
+                            <p>
+                                <strong>--</strong> Un equipo con al menos 2 GB de RAM y 20 GB de espacio en disco.
+                            </p>
+                            <p>
+                                <strong>--</strong> Un USB booteable con la imagen de BackBox Linux.
+                            </p>
+                            <p>
+                                <strong>--</strong> Conexión a Internet para descargar actualizaciones.
+                            </p>
+                        </p-tabPanel>
+                        <p-tabPanel header="Pasos para la instalación" [style]="{ 'color':'black'}">
+                            <div class="card flex justify-content-center"><img src="https://cdn-icons-png.flaticon.com/512/4394/4394573.png" alt="instalación" height="95"></div>
+                            <p>
+                                <strong>1.</strong> Descarga la imagen ISO: Accede al sitio oficial de <a href="https://www.backbox.org/" target="_blank">BackBox Linux</a> para obtener la imagen del sistema.
+                            </p>
+                            <p>
+                                <strong>2.</strong> Crear un USB booteable: Usa herramientas como Rufus para grabar la imagen en tu USB. <a href="https://rufus.ie/es/" target="_blank">Instrucciones de Rufus.</a>
+                            </p> 
+                            <p>
+                                <strong>3.</strong> Configuración de BIOS: Reinicia tu equipo y ajusta la BIOS para arrancar desde el USB.
+                            </p>
+                            <p>
+                                <strong>4.</strong> Iniciar instalación: <br>
+                                <strong>--</strong> Selecciona "Instalar BackBox Linux" desde el menú del USB. <br>
+                                <strong>--</strong> Configura idioma, zona horaria y teclado. <br>
+                                <strong>--</strong> Elige "Borrar disco e instalar BackBox" (esto eliminará los datos existentes del disco duro). <br>
+                                <strong>--</strong> Crea un nombre de usuario y contraseña para tu cuenta.
+                            </p>
+                            <p>
+                                <strong>5.</strong> Reiniciar: Una vez terminada la instalación, reinicia el equipo y accede con los datos creados.
+                            </p>
+                        </p-tabPanel>
+                        <p-tabPanel header="Configuración y optimización" [style]="{'color':'black'}">
+                            <div class="card flex justify-content-center"><img src="https://lh6.googleusercontent.com/DsZ2lPbYJdwZNf1TaR4k79AdlWIb5yAmr6P0C-6yJULC5-5QXL9jmSQ_ml91-y4KG3LLLP6K27fzV1K7SdRmM9SOX22xkmR3g7QFrBVA1OslaJVcMH94xNwKMhGrFa3DY1h0H3GJ" alt="optimización" height="95"></div>
+                            <p>
+                                <strong>1.</strong> Configuración de red: Configura la red del equipo para conectarte a internet.
+                            </p>
+                            <p>
+                                <strong>2.</strong> Actualización de paquetes: Utiliza el gestor de paquetes para actualizar los paquetes y software.
+                            </p>
+                            <p>
+                                <strong>3.</strong> Optimización del sistema: Elimina las aplicaciones innecesarias y establece la memoria RAM según el uso del equipo.
+                            </p>
+                            <p>
+                                <strong>4.</strong> Configuración de cortafuegos: Utiliza un cortafuego para proteger tu equipo y evitar ataques de ciberseguridad.
+                            </p>
+                            <p>
+                                <strong>5.</strong> Reiniciar el equipo: Después de las configuraciones, reinicia el equipo para aplicarlas.
+                            </p>
+                        </p-tabPanel>
+                    </p-tabView>
+                </div>
+            </ng-template>
+    </p-splitter>
+</div>
