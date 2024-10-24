@@ -1,48 +1,67 @@
 <p></p>
-<div class="comment">
-    <div class="comentarios1">
-        <h2>Comentarios</h2>
-        <div class="lista">
-          <div class="comentario">
-            <strong>Nombre</strong>
-            <p>ejemplo1</p>
-            <small>fecha</small>
-            <p></p>
-          </div>
-          <div class="comentario">
-            <strong>Nombre</strong>
-            <p>Ejemplo2</p>
-            <small>fecha</small>
-          </div>
+<div class="comment" style="padding: 20px;">
+    <div class="card-container flex">
+        <!-- Primer-->
+        <div class="card">
+            <p-card header="Autores" [style]="{ width: '560px', 'border-radius':'20px', 'color':'black', 'max-height': '160px' }">
+                <p class="m-0">
+                    Nosotros o originales ?
+                </p>
+                <p class="m-1">
+                    Si tienes preguntas, no dudes en contactar a cualquiera de los autores o dejar un comentario en
+                    esta zona: 
+                </p>
+            </p-card>
         </div>
 
-        <br>
-        <br>
-
-        <div class="flex">
-            <div class="card flex justify-content-center">
-                <p-floatLabel>
-                    <textarea 
-                        id="float-input" 
-                        rows="7"
-                        cols="160" 
-                        pInputTextarea>
-                    </textarea>
-                    <label for="float-input">Agrega un comentario</label>
-                </p-floatLabel>
-            </div>
+        <!-- Segunda-->
+        <div class="card">
+            <p-card header="ozuna" [style]="{ width: '560px', 'border-radius':'20px', 'color':'black', 'max-height': '160px'}">
+                <p class="m-0">
+                    He utilizado BackBox en auditorías de pequeñas empresas, y su
+                    rendimiento es excelente incluso en hardware limitado. ¡Recomendado!
+                </p>
+                <br>
+                <small>23/10/24</small>
+            </p-card>
         </div>
-        <br>
 
-        <div class="boton">
-            <div class="card flex justify-content-center">
-                <button 
-                    pButton 
-                    pRipple 
-                    label="Submit" 
-                    class="p-button-success"
-                    style="font-size: 1.5rem; padding: 0.75rem 1.5rem;">
-                </button>
-            </div>
+         <!-- tercer-->
+         <div class="card">
+            <p-card header="Simon123" [style]="{ width: '560px', 'border-radius':'20px', 'color':'black','max-height': '160px'}">
+                <p class="m-0">
+                    ¿Hay algún curso que recomienden para aprender a utilizar BackBox
+                    para análisis forense?
+                </p>
+                <br>
+                <small>29/11/23</small>
+            </p-card>
         </div>
+    </div>
+<br>
+    <div class="flex">
+        <div class="card flex" style="border-radius: 20px;">
+            <p-floatLabel>
+                <textarea 
+                    id="float-input" 
+                    rows="7"
+                    cols="160" 
+                    pInputTextarea
+                    style="width: 100%; max-width: 100%;">
+                </textarea>
+                <label for="float-input" class="color">Agrega un comentario</label>
+            </p-floatLabel>
+        </div>
+    </div>
+
+    <div class="boton">
+        <div class="card flex justify-content-center" style="border-radius: 20px; padding: 20px; max-width: 100%;">
+            <button 
+                pButton 
+                pRipple 
+                label="Enviar" 
+                class="p-button-success">
+            </button>
+        </div>
+    </div>
 </div>

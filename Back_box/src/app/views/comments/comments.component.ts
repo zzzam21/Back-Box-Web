@@ -5,11 +5,12 @@ import { InputTextareaModule } from 'primeng/inputtextarea';
 import { FormsModule } from '@angular/forms';
 import { FloatLabelModule } from 'primeng/floatlabel';
 import { ButtonModule } from 'primeng/button';
+import { CardModule } from 'primeng/card';
 
 @Component({
   selector: 'app-comments',
   standalone: true,
-  imports: [EncabezadoComponent, PieComponent, InputTextareaModule, FloatLabelModule, FormsModule,ButtonModule],
+  imports: [EncabezadoComponent, PieComponent, InputTextareaModule, FloatLabelModule, FormsModule,ButtonModule, CardModule],
   templateUrl: './comments.component.html',
   styleUrl: './comments.component.css'
 })
