@@ -3,10 +3,11 @@ import { CarouselModule } from 'primeng/carousel';
 import { ButtonModule } from 'primeng/button';
 import { TagModule } from 'primeng/tag';
 import { CardModule } from 'primeng/card';
+import { ImageModule } from 'primeng/image';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CarouselModule,ButtonModule,TagModule,CardModule],
+  imports: [CarouselModule,ButtonModule,TagModule,CardModule,ImageModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })

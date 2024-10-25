@@ -1,3 +1,54 @@
 .carousel {
     width: 30%;
 }
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nerko+One&display=swap');
+.contenedorGris {
+    background-color: #EEEEEE;
+    position: relative;
+    padding: 20px;
+}
+.contenedorGris::after {
+    content: '';
+    position: absolute;
+    bottom: -20px; /* Coloca el triángulo debajo del contenedor */
+    left: 50%;
+    transform: translateX(-50%); /* Centra el triángulo */
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #EEEEEE;
+    z-index: 1;
+}
+
+.contenedorBlanco {
+    background-color: #ffffff;
+    position: relative;
+    padding: 20px;
+}
+.contenedorBlanco::after {
+    content: '';
+    position: absolute;
+    bottom: -20px; /* Coloca el triángulo debajo del contenedor */
+    left: 50%;
+    transform: translateX(-50%); /* Centra el triángulo */
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #ffffff;
+    z-index: 1;
+}
+
+.titulos {
+font-style: "Montserrat", sans-serif;
+font-optical-sizing: auto;
+font-weight: 10;
+font-style: normal;
+}
+.p-button{
+    background-color: #1783B1;
+}
+.p-button:hover{
+    background-color: #1d94c7;
+}

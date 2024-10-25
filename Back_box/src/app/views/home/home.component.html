@@ -1,21 +1,81 @@
-<div class="flex justify-content-center align-items-center">
-    <p-carousel 
-    class="carousel"
-    [value]="user"
-    [numVisible]="1"
-    [circular]="true"
-    [responsiveOptions]="responsiveOptions">
-        <ng-template pTemplate="item" let-user>
-            <p-card [style]="{margin:'20px'}">
-                <div></div>
-                <div></div>
-                <div></div>
-                <h3>{{user.name}}</h3>
-                <i class="pi pi-user"></i>
-                <p [innerHTML]="user.description"></p>
-            </p-card>            
-        </ng-template>
-    </p-carousel>
+<div class="contenedorBlanco">
+    <div class="grid align-items-center">
+        <div class="col-6 text-center">
+            <h1 class="titulos">¿QUE ES BACKBOX?</h1>
+            <p>
+                BackBox es más que un sistema operativo, es un proyecto comunitario <br>
+                de código abierto y libre cuyo objetivo es promover la cultura de la<br>
+                seguridad en el entorno informático y aportar su granito de arena <br>
+                para hacerlo mejor y más seguro. Todo ello utilizando exclusivamente<br>
+                software libre y libre, demostrando el potencial y el poder de la <br>
+                Comunidad. Si quieres saber más acerca de backbox <a href="lineTime">click aquí</a>.</p>
+            <a pButton label="Instalación" icon="pi pi-download" iconPos="right" href="configuration" style="text-decoration:none;"></a>
+        </div>
+        <div class="col-6">
+            <p-image src="https://cdn.cyberpunk.rs/wp-content/uploads/2019/01/backbox_linux_bg.jpg" width="90%"/>
+        </div>
+    </div>
+</div>
+
+<div class="contenedorGris">
+    <div class="grid">
+        <div class="col-6 col-offset-3 text-center">
+            <h1 class="titulos">EQUIPO DE DESARROLLO</h1>        
+        </div>
+    </div>
+    <div class="grid grid-nogutter">
+        <div class="col">
+            <div class="flex justify-content-end p-3 text-center">
+                <p>Back Box Linux esta creado de manera <br>
+                    colaborativa por unas pocas personas <br>
+                    y ademas tiene una comunidad de tamaño medio <br>
+                    con seguidores. A continuacion se presentan<br>
+                    algunos de los creadores. <a href="comments">Ver más!</a>
+                    </p>
+            </div>
+        </div>
+        <div class="col"> 
+            <div class="text-left p-3 p-20">
+                <p-image src="https://www.shakebugs.com/wp-content/uploads/2022/07/Shake-naslovne-slike-27-1.png"
+                alt="Equipo de trabajo"
+                width="25%"
+            />
+            </div>
+        </div>
+    </div>    
+</div>
+
+<div class="contenedorBlanco">
+    <div class="flex justify-content-center align-items-center">
+        <p-carousel 
+        class="carousel"
+        [value]="user"
+        [numVisible]="1"
+        [circular]="true"
+        [responsiveOptions]="responsiveOptions">
+            <ng-template pTemplate="item" let-user>
+                <p-card [style]="{margin:'20px'}">
+                    <div class="grid">
+                        <div class="col-6 col-offset-3">
+                            <div class="text-center">
+                                <h3>{{user.name}}</h3>
+                            </div>
+                            <div class="flex align-content-center justify-content-center">
+                                <p-image src="https://cdn-icons-png.flaticon.com/512/6073/6073873.png"
+                                alt="Icono Creador"
+                                width="80"/>
+                            </div>
+                            <div class="text-center">
+                                <p [innerHTML]="user.description"></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </p-card>            
+            </ng-template>
+        </p-carousel>
+    </div>
 </div>
 
     
