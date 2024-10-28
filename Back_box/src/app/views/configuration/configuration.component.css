@@ -15,3 +15,37 @@
 .custom-splitter .p-splitter-panel {
     border-radius: 10px;
 }
+
+.custom-img{
+    height: 440px;
+}
+
+.custom-img2{
+    width: 300px;
+    height: 300px;
+}
+.custom-video{
+    width: 800px;
+    height: 315px;
+}
+
+.grid-custom {
+    position: relative; /* Necesario para posicionar el ::before */
+}
+
+.grid-custom::before {
+    content: "";
+    position: absolute;
+    top: 50%; /* Centra la línea verticalmente */
+    left: 0;
+    width: 100%;
+    height: 2px; /* Grosor de la línea */
+    background-color: #000; /* Color de la línea */
+    z-index: 0; /* Asegura que esté detrás de las imágenes y el video */
+}
+
+.col-custom {
+    position: relative;
+    z-index: 1; /* Asegura que el contenido esté frente a la línea */
+}
+
