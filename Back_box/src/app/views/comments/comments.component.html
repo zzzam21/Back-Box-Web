@@ -1,60 +1,86 @@
 <p></p>
 <div class="comment" style="padding: 20px;">
-    <div class="card-container flex">
-        <!-- Primer-->
-        <div class="card" [style]="{ width: '1250px' }">
-            <p-card header="Autores" [style]="{ width: '100%', 'border-radius':'20px', 'color':'black', 'max-height': '230px' }">
+    <div class="card-container" style="display: flex; flex-direction: row; gap: 5px; flex-wrap: wrap;">
+        <!-- Intro -->
+        <div class="card flex custom-div align-items-center" style="display: flex; align-items: center; width: 100%;">
+            <i class="pi pi-user pl-5" style="font-size: 30px; margin-right: 8px; color: #ffffff"></i>
+            <h1>Autores:</h1>
+        </div>
+        
+        <!-- Tarjetas de autores en disposición horizontal -->
+        <div class="card" style="flex: 1;">
+            <p-card header="Raffaele Forte" [style]="{ width: '300px', 'border-radius':'20px', 'color':'black', 'max-height': '250px'}">
                 <p class="m-0">
-                    <strong>-- Raffaele Forte - </strong> Fundador y desarrollador principal el cual cuenta con una sólida experiencia en ciberseguridad y pruebas de penetración
-                    <br>
-                    <strong>-- Stefan Umit Uygur - </strong> Se encarga de la comunicación y las relaciones públicas de BackBox, así como del soporte de la comunidad.
-                    <br>
-                    <strong>-- Gianfranco Costamagna - </strong> Su papel en BackBox se centra en el mantenimiento de los repositorios y la integración de herramientas de seguridad.
-                    <br>
-                    <strong>-- Andrea Draghetti, Cristian Mariolini, Nenad Marjanovic y Abdel Adim Oisfi - </strong> Estos miembros contribuyen de diversas formas al proyecto, como desarrolladores, evaluadores de calidad y soporte en el foro de usuarios.
-                    <br>
-                </p>
-                
-                <br>
-                <p class="m-1">
-                    <strong>* Si tienes preguntas, no dudes en contactar a cualquiera de los autores o dejar un comentario en
-                        esta zona:</strong> 
-                        <br>
-                    <strong>-- correo de contacto: </strong> 
-                    <a href="mailto:info&#64;backbox.org">info&#64;backbox.org</a>
-                    
-
+                    Fundador y desarrollador principal el cual cuenta con una sólida 
+                    experiencia en ciberseguridad y pruebas de penetración.
                 </p>
             </p-card>
         </div>
 
-        <!-- Segunda-->
-        <div class="card">
-            <p-card header="ozuna" [style]="{ width: '560px', 'border-radius':'20px', 'color':'black', 'max-height': '160px'}">
+        <div class="card" style="flex: 1;">
+            <p-card header="Stefan Umit Uygur" [style]="{ width: '300px', 'border-radius':'20px', 'color':'black', 'max-height': '250px'}">
                 <p class="m-0">
-                    He utilizado BackBox en auditorías de pequeñas empresas, y su
-                    rendimiento es excelente incluso en hardware limitado. ¡Recomendado!
+                    Se encarga de la comunicación y las relaciones públicas de BackBox,
+                    así como del soporte de la comunidad.
                 </p>
-                <br>
-                <small>23/10/24</small>
             </p-card>
         </div>
 
-        <!-- tercer-->
-        <div class="card">
-            <p-card header="Simon123" [style]="{ width: '560px', 'border-radius':'20px', 'color':'black','max-height': '160px', }">
+        <div class="card" style="flex: 1;">
+            <p-card header="Gianfranco Costamagna" [style]="{ width: '300px', 'border-radius':'20px', 'color':'black', 'max-height': '250px'}">
                 <p class="m-0">
-                    ¿Hay algún curso que recomienden para aprender a utilizar BackBox 
-                    para análisis forense?
+                    Su papel en BackBox se centra en el mantenimiento de 
+                    los repositorios y la integración de herramientas de seguridad.
                 </p>
-                <br>
-                <small>29/11/23</small>
             </p-card>
         </div>
+
+        <div class="card" style="flex: 1;">
+            <p-card header="Andrea Draghetti, Cristian Mariolini, Nenad Marjanovic y Abdel Adim Oisfi" [style]="{ width: '300px', 'border-radius':'20px', 'color':'black', 'max-height': '260px'}">
+                <p class="m-0">
+                    Estos miembros contribuyen de diversas formas al proyecto, como desarrolladores, 
+                    evaluadores de calidad y soporte en el foro de usuarios.
+                </p>
+            </p-card>
+        </div>
+        <br>
+        <br>
+        <div class="card flex custom-div align-items-center" style="display: flex; align-items: center; width: 100%;">
+            <i class="pi pi-comments" style="font-size: 30px; margin-right: 8px; color: #ffffff"></i>
+            <h1>Comentarios:</h1>
+        </div>
+        <br>
+    </div>
+    
+     <!-- Segunda tarjeta de comentario -->
+     <div class="card" style="flex: 1;">
+        <p-card header="ozuna" [style]="{ width: '500px', 'border-radius':'20px', 'color':'black', 'max-height': '175px'}">
+            <p class="m-0">
+                He utilizado BackBox en auditorías de pequeñas empresas, y su
+                rendimiento es excelente incluso en hardware limitado. ¡Recomendado!
+            </p>
+            <br>
+            <small>23/10/24</small>
+        </p-card>
     </div>
 <br>
-    <div class="flex">
-        <div class="card flex" style="border-radius: 20px;">
+<br>
+    <!-- Tercer tarjeta de comentario -->
+    <div class="card" style="flex: 1;">
+        <p-card header="Simon123" [style]="{ width: '500px', 'border-radius':'20px', 'color':'black','max-height': '154px', }">
+            <p class="m-0">
+                ¿Hay algún curso que recomienden para aprender a utilizar BackBox 
+                para análisis forense?
+            </p>
+            <br>
+            <small>29/11/23</small>
+        </p-card>
+    </div>
+    <br>
+    <br>
+    <!-- Área de comentario -->
+    <div class="flex" style="display: flex; flex-direction: column; align-items: center;">
+        <div class="card flex" style="border-radius: 20px; width: 100%;">
             <p-floatLabel>
                 <textarea 
                     id="float-input" 
@@ -68,7 +94,8 @@
         </div>
     </div>
 
-    <div class="boton">
+    <!-- Botón de enviar -->
+    <div class="boton" style="display: flex; justify-content: center; width: 100%;">
         <div class="card flex justify-content-center" style="border-radius: 20px; padding: 20px; max-width: 100%;">
             <button 
                 pButton 
