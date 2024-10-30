@@ -143,24 +143,19 @@
 
 <div>
     <div class="flex align-items-center justify-content-center p-3 m-5">
-        <p-floatLabel>
-            <textarea 
-                id="float-input" 
-                rows="7"
-                cols="160" 
-                pInputTextarea
-                style="width: 100%; max-width: 100%;">
-            </textarea>
-            <label for="float-input" class="color"><strong>Agrega un comentario</strong></label>
-        </p-floatLabel>
-    </div>
-    <div class="card flex justify-content-center" style="max-width: 100%;">
-        <button 
-            pButton 
-            label="Enviar" 
-            class="p-button-success"
-            icon="pi pi-send"
-            iconPos="right">
-        </button>
+        <form action="https://formsubmit.co/7abadbb958d90b13ac12fff555ae2fec" method="POST">
+            <p-floatLabel>
+                <textarea
+                    name="comments"
+                    rows="7"
+                    cols="160" 
+                    pInputTextarea
+                    style="width: 100%; max-width: 100%;">
+                </textarea>
+                <label for="comments" class="color"><strong>Envia un mensaje</strong></label>
+            </p-floatLabel>
+            <button type="submit" pButton icon="pi pi-send" iconPos="right" class="p-button-success" label="Enviar"></button>
+            <input type="hidden" name="_captcha" value="false">
+        </form>
     </div>
 </div>
