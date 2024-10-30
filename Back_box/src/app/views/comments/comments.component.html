@@ -142,32 +142,25 @@
 </div>
 
 <div>
-    <div class="flex" style="display: flex; flex-direction: column; align-items: center; margin: 20px;">
-        <div class="card flex" style="border-radius: 20px; width: 100%;">
-            <p-floatLabel>
-                <textarea 
-                    id="float-input" 
-                    rows="7"
-                    cols="160" 
-                    pInputTextarea
-                    style="width: 100%; max-width: 100%;">
-                </textarea>
-                <label for="float-input" class="color"><strong>Agrega un comentario</strong></label>
-            </p-floatLabel>
-        </div>
+    <div class="flex align-items-center justify-content-center p-3 m-5">
+        <p-floatLabel>
+            <textarea 
+                id="float-input" 
+                rows="7"
+                cols="160" 
+                pInputTextarea
+                style="width: 100%; max-width: 100%;">
+            </textarea>
+            <label for="float-input" class="color"><strong>Agrega un comentario</strong></label>
+        </p-floatLabel>
     </div>
-
-    <!-- Botón de enviar -->
-    <div class="boton" style="display: flex; justify-content: center; width: 100%;">
-        <div class="card flex justify-content-center" style="border-radius: 20px; padding: 20px; max-width: 100%;">
-            <button 
-                pButton 
-                pRipple 
-                label="Enviar" 
-                class="p-button-success">
-            </button>
-        </div>
+    <div class="card flex justify-content-center" style="max-width: 100%;">
+        <button 
+            pButton 
+            label="Enviar" 
+            class="p-button-success"
+            icon="pi pi-send"
+            iconPos="right">
+        </button>
     </div>
 </div>
-
- 
