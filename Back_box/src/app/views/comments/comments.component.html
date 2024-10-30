@@ -89,14 +89,11 @@
         </p>
     </div>
 </div>
-    
+
 <div class="grid">
-    <!-- NUESTROS COMENTARIOS -->
-     <!-- display: flex; flex-direction: row; gap: 5px; flex-wrap: wrap; -->
-    <div class="col-6 flex-wrap flex justify-content-center">
-        <div class="gap-3 flex-wrap flex justify-content-center" style="background-color: #EEEEEE;border-radius:10px; padding:20px; width:80%">
-            <!-- Primera tarjeta de comentario -->
-            <div class="card">
+    <div class="col-6">
+        <div class="border-round-sm font-bold flex justify-content-center">
+            <div class="card flex justify-content-center" style="background-color: #EEEEEE;border-radius:10px; padding:20px; width:80%">
                 <p-card subheader="23/10/24" header="Alexander Yama" [style]="{ width: '500px', 'border-radius':'20px', 'color':'black', 'max-height': '175px','box-shadow':'5px 5px 10px rgba(0,0,0,0.3)'}">
                     <p class="m-0">
                         He utilizado BackBox en auditorías de pequeñas empresas, y su
@@ -104,9 +101,11 @@
                     </p>
                 </p-card>
             </div>
-
-            <!-- Tercer tarjeta de comentario -->
-            <div class="card">
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="border-round-sm font-bold  flex justify-content-center">
+            <div class="card flex justify-content-center" style="background-color: #EEEEEE;border-radius:10px; padding:20px; width:80%">
                 <p-card subheader="29/11/23" header="Samuel Salazar" [style]="{ width: '500px', 'border-radius':'20px', 'color':'black','max-height': '175px','box-shadow':'5px 5px 10px rgba(0,0,0,0.3)' }">
                     <p class="m-0">
                         ¿Hay algún curso que recomienden para aprender a utilizar BackBox 
@@ -114,8 +113,11 @@
                     </p>
                 </p-card>
             </div>
-            <!-- Tercera tarjeta de comentario -->
-            <div class="card">
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="border-round-sm  font-bold  flex justify-content-center">
+            <div class="card flex justify-content-center" style="background-color: #EEEEEE;border-radius:10px; padding:20px; width:80%">
                 <p-card subheader="13/10/24" header="Sebastian Matabanchoy" [style]="{ width: '500px', 'border-radius':'20px', 'color':'black', 'max-height': '175px','box-shadow':'5px 5px 10px rgba(0,0,0,0.3)'}">
                     <p class="m-0">
                         Muy bien explicado, la instalacion ha ido perfecto y siguiendo todos
@@ -123,8 +125,11 @@
                     </p>
                 </p-card>
             </div>
-            <!-- Cuarta tarjeta de comentario -->
-            <div class="card">
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="border-round-sm  font-bold  flex justify-content-center">
+            <div class="card flex justify-content-center" style="background-color: #EEEEEE;border-radius:10px; padding:20px; width:80%">
                 <p-card subheader="29/10/23" header="Daniel Trujillo" [style]="{ width: '500px', 'border-radius':'20px', 'color':'black','max-height': '175px','box-shadow':'5px 5px 10px rgba(0,0,0,0.3)' }">
                     <p class="m-0">
                         ¿no hay una version mas reciente? Por lo demas genial, me encanta
@@ -133,36 +138,36 @@
                 </p-card>
             </div>
         </div>
-        
+    </div>
+</div>
+
+<div>
+    <div class="flex" style="display: flex; flex-direction: column; align-items: center; margin: 20px;">
+        <div class="card flex" style="border-radius: 20px; width: 100%;">
+            <p-floatLabel>
+                <textarea 
+                    id="float-input" 
+                    rows="7"
+                    cols="160" 
+                    pInputTextarea
+                    style="width: 100%; max-width: 100%;">
+                </textarea>
+                <label for="float-input" class="color"><strong>Agrega un comentario</strong></label>
+            </p-floatLabel>
+        </div>
     </div>
 
-    <div class="col-6 align-content-center">
-        <!-- Área de comentario -->
-        <div class="flex" style="display: flex; flex-direction: column; align-items: center; margin: 20px;">
-            <div class="card flex" style="border-radius: 20px; width: 100%;">
-                <p-floatLabel>
-                    <textarea 
-                        id="float-input" 
-                        rows="7"
-                        cols="160" 
-                        pInputTextarea
-                        style="width: 100%; max-width: 100%;">
-                    </textarea>
-                    <label for="float-input" class="color"><strong>Agrega un comentario</strong></label>
-                </p-floatLabel>
-            </div>
-        </div>
-
-        <!-- Botón de enviar -->
-        <div class="boton" style="display: flex; justify-content: center; width: 100%;">
-            <div class="card flex justify-content-center" style="border-radius: 20px; padding: 20px; max-width: 100%;">
-                <button 
-                    pButton 
-                    pRipple 
-                    label="Enviar" 
-                    class="p-button-success">
-                </button>
-            </div>
+    <!-- Botón de enviar -->
+    <div class="boton" style="display: flex; justify-content: center; width: 100%;">
+        <div class="card flex justify-content-center" style="border-radius: 20px; padding: 20px; max-width: 100%;">
+            <button 
+                pButton 
+                pRipple 
+                label="Enviar" 
+                class="p-button-success">
+            </button>
         </div>
     </div>
 </div>
+
+ 
